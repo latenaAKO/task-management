@@ -13,7 +13,7 @@ class CreateClientProjectPivotTable extends Migration
      */
     public function up()
     {
-        Schema::create('client_project_pivot', function (Blueprint $table) {
+        Schema::create('client_project', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('project_id')->unsigned();
             $table->integer('client_id')->unsigned();
